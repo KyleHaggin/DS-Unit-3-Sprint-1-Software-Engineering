@@ -17,8 +17,9 @@ class AcmeProductTests(unittest.TestCase):
         '''Test generated product with price 7, weight 30, flammability 1 has
            stealability of Not so Stealable and explode of ...boom!'''
         prod = Product('Test Product', 7, 30, 1)
-        # self.assertEqual(prod.stealability, 'Not so stealable')
-        # self.assertEqual(prod.explode, '...boom!')
+        print(prod.stealability())
+        self.assertEqual(prod.stealability(), 'Not so stealable')
+        self.assertEqual(prod.explode(), '...boom!')
 
 if __name__ == '__main__':
     unittest.main()

@@ -17,7 +17,7 @@ class Product:
         self.identifier = identifier
 
     def stealability(self):
-        if (self.price / self.weight) < 0:
+        if (self.price / self.weight) < 0.5:
             return 'Not so stealable'
         elif (self.price / self.weight) < 1:
             return 'Kinda stealable'
