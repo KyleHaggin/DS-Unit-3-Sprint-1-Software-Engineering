@@ -270,6 +270,14 @@ career here, you'll have to answer the following:
 
 Answer both of these questions (baseline ~5 sentences) here in text.
 
+
+PART 7 ANSWERS
+- An important part of code reviews is someone else checking your code for readability. If someone's code cannot be read by another, then the code can easily become usless when the original
+  author of the code leaves the project. I check for readability and commenting when looking at someone else's code, after all, even if the code doesn't work, if it is easily understandable
+  then someone else can easily debug it. I appreciate when others do the same for me, as well as when they check for typos in my code as I often make small mistakes like that.
+- Containers could be helpful with many computers by allowing pieces of code to be run on all the systems with consistant and reproducable effects. The containers could also allow easier
+  distribution of the code to all the machines.
+
 ### Part 8 - Turn it in!
 
 Add all the files you wrote (`acme.py`, `acme_report.py`, and `acme_test.py`),
