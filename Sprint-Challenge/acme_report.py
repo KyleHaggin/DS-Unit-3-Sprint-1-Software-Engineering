@@ -18,6 +18,17 @@ def generate_products(num_products=30):
 
 def inventory_report(products):
     prod_list = generate_products()
+    price_sum = 0
+    weight_sum = 0
+    flame_sum = 0
+    length = len(prod_list)
+    for x in range(0, length):
+        price_sum = price_sum + prod_list[x].price
+        weight_sum = weight_sum + prod_list[x].weight
+        flame_sum = flame_sum + prod_list[x].flammability
+    print('Average price: ' + str(price_sum / length))
+    print('Average weight: ' + str(weight_sum / length))
+    print('Average flammability ' + str(flame_sum / length))
     pass  # TODO - your code! Loop over the products to calculate the report.
 
 
