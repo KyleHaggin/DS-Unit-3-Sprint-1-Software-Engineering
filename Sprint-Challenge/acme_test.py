@@ -20,5 +20,18 @@ class AcmeProductTests(unittest.TestCase):
         self.assertEqual(prod.stealability(), 'Not so stealable')
         self.assertEqual(prod.explode(), '...boom!')
 
+    def test_default_num_products(self):
+        self.assertEqual(len(generate_products()), 30)
+
+    def test_legal_names(self):
+        legal_names = []
+        prod = generate_products()
+        for x in range(len(ADJECTIVES)):
+            for y in range(len(NOUNS)):
+                name_hldr = ADJECTIVES[x] + ' ' + NOUNS[y]
+                legal_names.append(name_hldr)
+        for x in range(len(prod)):
+            self.assertIn(prod[x].name, legal_names)
+
 if __name__ == '__main__':
     unittest.main()
