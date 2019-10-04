@@ -32,7 +32,7 @@ def inventory_report(products):
     print('Average price: ' + str(price_sum / length))
     print('Average weight: ' + str(weight_sum / length))
     print('Average flammability ' + str(flame_sum / length))
-    pass  # TODO - your code! Loop over the products to calculate the report.
+    pass
 
 
 if __name__ == '__main__':
