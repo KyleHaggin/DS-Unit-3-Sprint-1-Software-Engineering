@@ -17,6 +17,7 @@ def generate_products(num_products=30):
 
 
 def inventory_report(products):
+    prod_list = generate_products()
     pass  # TODO - your code! Loop over the products to calculate the report.
 
 
