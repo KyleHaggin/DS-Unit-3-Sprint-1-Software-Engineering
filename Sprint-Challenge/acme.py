@@ -32,3 +32,29 @@ class Product:
             return '...boom!'
         else:
             return '...BABOOM!'
+
+
+'''
+Sprint Challenge Part 3
+'''
+
+
+class BoxingGlove(Product):
+    '''
+    Boxing Glove subclass of Product
+    '''
+
+    def __init__(self, name, weight=10):
+        super().__init__(name)
+        self.weight = weight
+
+    def explode(self):
+        return '...it\'s a glove.'
+
+    def punch(self):
+        if self.weight < 5:
+            return 'That tickles.'
+        elif self.weight < 15:
+            return 'Hey that hurt!'
+        else:
+            return 'OUCH!'
