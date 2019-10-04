@@ -8,7 +8,7 @@ NOUNS = ['Anvil', 'Catapult', 'Disguise', 'Mousetrap', '???']
 
 def generate_products(num_products=30):
     products = []
-    
+    products = 
     return products
 
 
@@ -18,5 +18,3 @@ def inventory_report(products):
 
 if __name__ == '__main__':
     inventory_report(generate_products())
-
-
